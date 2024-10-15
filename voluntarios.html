@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntários - Esperança Para Todos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a class="ativo" href="voluntarios.html">Voluntários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Seja um Voluntário</h2>
+            <p>Estamos sempre à procura de pessoas apaixonadas por ajudar. Preencha o formulário abaixo para se juntar à
+                nossa equipe:</p>
+
+            <!-- Formulário de Voluntários -->
+            <form id="voluntarioForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+
+                <label for="mensagem">Por que quer ser voluntário?</label>
+                <textarea id="mensagem" name="mensagem" rows="5"
+                    placeholder="Conte-nos por que você gostaria de ser voluntário" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mensagem de Sucesso -->
+            <div id="mensagemSucesso" style="display:none;">
+                <p>Obrigado por se inscrever! Entraremos em contato em breve.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ONG Esperança Para Todos - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Linkando o JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

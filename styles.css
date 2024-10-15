@@ -1,0 +1,206 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Estilo do Menu de Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Destaque para o link ativo */
+nav ul li a.ativo {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Estilo para as caixas de projeto na página de projetos */
+.projeto {
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo do formulário na página de voluntários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da mensagem de sucesso */
+#mensagemSucesso {
+    color: green;
+    font-size: 1.2em;
+    background-color: #eafaea;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-size: 0.9em;
+    color: #999;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagem de Sucesso */
+#mensagemSucesso {
+    color: green;
+    font-size: 1.2em;
+    background-color: #eafaea;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
